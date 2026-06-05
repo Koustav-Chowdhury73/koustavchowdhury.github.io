@@ -227,3 +227,26 @@ main {
     .nav-links { display: none; /* Add a hamburger menu here later if desired */ }
     .masonry { column-count: 1; }
 }
+
+/* PDF Viewer Styling */
+.pdf-container {
+    width: 100%;
+    max-width: 900px;
+    height: 80vh; /* Adjust this value (e.g., 600px) if you want a fixed height */
+    margin: 0 auto;
+    padding: 0; /* Removes padding so the PDF fits flush with the edges */
+    overflow: hidden;
+    display: flex; /* Ensures the iframe fills the container properly */
+}
+
+.pdf-container iframe {
+    border: none;
+    border-radius: 12px; /* Matches the glass-card edges */
+}
+
+/* Responsive adjustment for mobile devices */
+@media (max-width: 768px) {
+    .pdf-container {
+        height: 60vh; 
+    }
+}
